@@ -15,6 +15,7 @@ class News(models.Model):
     news_text = models.TextField()
     news_category = models.ForeignKey(NewsCategory, on_delete=models.CASCADE)
     date_added = models.DateField()
+    news_photo = models.ImageField(upload_to='media')
 
 
     def __str__(self):

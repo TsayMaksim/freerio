@@ -34,7 +34,7 @@
         {% for n in news %}
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-
+            <img src="{{ n.news_photo.url }}" width="400" height="250" alt="{{ no_pic }}">
         </div>
         <h3 class="fs-2 text-white">{{ n.news_title }}</h3>
         <p class="text-white">{{ n.news_description }}</p>
